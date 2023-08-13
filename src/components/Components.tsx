@@ -3,7 +3,7 @@ import { useFetch } from "@raycast/utils";
 import { parseStoriesJson } from "../utils";
 import { Stories } from "./Stories";
 
-export function Components({ url }: { url: string }) {
+export function Components({ title, url }: { title: string; url: string }) {
   const { push } = useNavigation();
 
   const { isLoading, data: components } = useFetch(`${url}/stories.json`, {
@@ -20,7 +20,7 @@ export function Components({ url }: { url: string }) {
   });
 
   return (
-    <List isLoading={isLoading}>
+    <List navigationTitle={title} isLoading={isLoading}>
       {!isLoading &&
         components &&
         Object.values(components).map((component) => (

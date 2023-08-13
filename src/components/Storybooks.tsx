@@ -21,7 +21,7 @@ export function Storybooks({
           icon={Icon.Book}
           actions={
             <ActionPanel>
-              <Action title="Push" onAction={() => push(<Components url={storybook.url} />)} />
+              <Action title="Push" onAction={() => push(<Components title={storybook.name} url={storybook.url} />)} />
               <AddStorybookAction onCreate={onCreate} />
             </ActionPanel>
           }

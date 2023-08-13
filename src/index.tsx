@@ -1,4 +1,4 @@
-import { ActionPanel, List, LocalStorage, launchCommand, LaunchType, Icon } from "@raycast/api";
+import { ActionPanel, List, LocalStorage, Icon } from "@raycast/api";
 import { Storybooks } from "./components/Storybooks";
 import { useCallback, useEffect, useState } from "react";
 import { Storybook } from "./types";
@@ -6,6 +6,7 @@ import AddStorybookAction from "./components/AddStorybookAction";
 import { nanoid } from "nanoid";
 
 // https://master--5ccbc373887ca40020446347.chromatic.com
+// https://tetra.chromatic.com
 
 interface State {
   error?: string;

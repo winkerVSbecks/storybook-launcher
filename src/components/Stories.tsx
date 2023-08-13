@@ -3,7 +3,7 @@ import { SBComponent } from "../types";
 
 export function Stories({ component, url }: { component: SBComponent; url: string }) {
   return (
-    <List>
+    <List navigationTitle={component.name}>
       {component.stories.map((story) => (
         <List.Item
           key={story.id}
