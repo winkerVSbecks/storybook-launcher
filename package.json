@@ -1,9 +1,9 @@
 {
   "$schema": "https://www.raycast.com/schemas/extension.json",
   "name": "storybook-launcher",
-  "title": "Storybook",
+  "title": "Storybook Launcher",
   "description": "Browse components and stories and launch them in Storybook",
-  "icon": "storybook-icon.png",
+  "icon": "storybook-launcher.png",
   "author": "vrn",
   "categories": [
     "Developer Tools",
