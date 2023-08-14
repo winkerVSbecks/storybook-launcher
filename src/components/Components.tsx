@@ -30,7 +30,11 @@ export function Components({ title, url }: { title: string; url: string }) {
             icon={Icon.AppWindowList}
             actions={
               <ActionPanel>
-                <Action title="Push" onAction={() => push(<Stories component={component} url={url} />)} />
+                <Action
+                  icon={Icon.ArrowRight}
+                  title="View Stories"
+                  onAction={() => push(<Stories component={component} url={url} />)}
+                />
               </ActionPanel>
             }
           />

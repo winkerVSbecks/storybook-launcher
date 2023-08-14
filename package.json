@@ -13,8 +13,7 @@
   "commands": [
     {
       "name": "index",
-      "title": "Storybook",
-      "subtitle": "Browse and launch stories",
+      "title": "Search Storybook",
       "description": "Browse and launch stories",
       "mode": "view"
     }

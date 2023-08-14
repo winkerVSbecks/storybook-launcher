@@ -24,7 +24,11 @@ export function Storybooks({
           icon={Icon.Book}
           actions={
             <ActionPanel>
-              <Action title="Push" onAction={() => push(<Components title={storybook.name} url={storybook.url} />)} />
+              <Action
+                icon={Icon.ArrowRight}
+                title="View Components"
+                onAction={() => push(<Components title={storybook.name} url={storybook.url} />)}
+              />
               <AddStorybookAction onCreate={onCreate} />
               <DeleteStorybookAction id={storybook.id} onDelete={onDelete} />
             </ActionPanel>

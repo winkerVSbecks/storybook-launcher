@@ -63,7 +63,7 @@ export function AddStorybookForm(props: { onCreate: (name: string, url: string) 
       <Form.TextField
         id="url"
         title="URL"
-        placeholder="Enter the URL for your published Storybook"
+        placeholder="Enter the base URL for your published Storybook (no trailing slash)"
         error={urlError}
         onChange={dropURLErrorIfNeeded}
         onBlur={(event) => {
