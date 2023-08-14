@@ -2,13 +2,16 @@ import { ActionPanel, List, Action, Icon, useNavigation } from "@raycast/api";
 import { Storybook } from "../types";
 import { Components } from "./Components";
 import AddStorybookAction from "./AddStorybookAction";
+import DeleteStorybookAction from "./DeleteStorybookAction";
 
 export function Storybooks({
   storybooks,
   onCreate,
+  onDelete,
 }: {
   storybooks: Storybook[];
   onCreate: (name: string, url: string) => void;
+  onDelete: (id: string) => void;
 }) {
   const { push } = useNavigation();
 
@@ -23,6 +26,7 @@ export function Storybooks({
             <ActionPanel>
               <Action title="Push" onAction={() => push(<Components title={storybook.name} url={storybook.url} />)} />
               <AddStorybookAction onCreate={onCreate} />
+              <DeleteStorybookAction id={storybook.id} onDelete={onDelete} />
             </ActionPanel>
           }
         />

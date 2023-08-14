@@ -48,10 +48,18 @@ export default function Command() {
     [state.storybooks, setState]
   );
 
+  const handleDelete = useCallback(
+    (id: string) => {
+      const newStorybooks = state.storybooks.filter((story) => story.id !== id);
+      setState((previous) => ({ ...previous, storybooks: newStorybooks }));
+    },
+    [state.storybooks, setState]
+  );
+
   return (
     <List>
       {state.storybooks.length > 0 ? (
-        <Storybooks storybooks={state.storybooks} onCreate={handleAdd} />
+        <Storybooks storybooks={state.storybooks} onCreate={handleAdd} onDelete={handleDelete} />
       ) : (
         <List.EmptyView
           icon={Icon.Tray}
