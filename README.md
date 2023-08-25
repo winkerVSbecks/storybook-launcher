@@ -2,6 +2,8 @@
 
 With this extension, you can quickly search for components in your Storybook and launch their respective stories directly in the browser. The extension also supports multiple Storybooks.
 
+<a title="Install storybook-launcher Raycast Extension" href="https://www.raycast.com/vrn/storybook-launcher"><img src="https://www.raycast.com/vrn/storybook-launcher/install_button@2x.png?v=1.1" height="64" alt="" style="height: 64px;"></a>
+
 Note, this extension only supports [published Storybooks](https://storybook.js.org/docs/react/sharing/publish-storybook#page-top) using the [stories.json mode](https://storybook.js.org/docs/react/api/main-config-features#buildstoriesjson).
 
 ## Usage
